@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+header{
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);  
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin-bottom: 35px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)}
+.btn-grad {
+   margin: 10px 0;
+   padding: 15px 50px;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: black;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   border: none;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+.newspaper {
+  background-color: antiquewhite;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+
+.magazine1 {
+  background-color: teal;
+  color: white;
+  font-family: 'Verdana';
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.magazine2 {
+  background-image: url('../images/pink-pattern.png');
+  color: fuchsia;
+  font-family: 'Verdana';
+  font-weight: 900;
+}
+
+.medium {
+  font-size: 20px;
+  padding: 8px;
+}
+
+.big {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.reallybig {
+  font-size: 40px;
+  padding: 15px;
+}
+
+.rotateleft {
+  transform: rotate(-5deg)
+}
+
+.rotateright {
+  transform: rotate(5deg)
+}
+
+.skewleft{
+    transform: skewX(10deg);
+}
+.skewright{
+    transform: skewX(-10deg);
+}

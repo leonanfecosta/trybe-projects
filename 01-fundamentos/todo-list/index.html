@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <title>Minha Lista de Tarefas</title>
+  </head>
+  <body>
+    <header class="header">
+      <section class="title-container">
+        <h1>Minha Lista de Tarefas</h1>
+        <p id="funcionamento">
+          Clique duas vezes em um item para marcá-lo como completo
+        </p>
+      </section>
+    </header>
+
+    <main class="content">
+      <section class="main-content">
+        <div class="input-field col s6">
+          <input
+            class="validate"
+            id="texto-tarefa"
+            type="text"
+            placeholder="Digite uma tarefa"
+          />
+          <button
+            class="waves-effect waves-light btn"
+            id="criar-tarefa"
+            type="button"
+          >
+            Adicionar
+          </button>
+        </div>
+
+        <div>
+          <ol id="lista-tarefas"></ol>
+        </div>
+
+        <div id="btn-container">
+          <button
+            class="waves-effect waves-light btn red"
+            id="apaga-tudo"
+            type="button"
+          >
+            Apagar tudo
+          </button>
+          <button
+            class="waves-effect waves-light btn blue"
+            id="remover-finalizados"
+            type="button"
+          >
+            Remover Finalizados
+          </button>
+          <button
+            class="waves-effect waves-light btn green"
+            id="salvar-tarefas"
+            type="button"
+          >
+            Salvar Lista
+          </button>
+          <button
+            class="waves-effect waves-light btn black"
+            id="mover-cima"
+            type="button"
+          >
+            Mover para cima
+          </button>
+          <button
+            class="waves-effect waves-light btn black"
+            id="mover-baixo"
+            type="button"
+          >
+            Mover para baixo
+          </button>
+          <button
+            class="waves-effect waves-light btn grey"
+            id="remover-selecionado"
+            type="button"
+          >
+            Remover selecionado
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
