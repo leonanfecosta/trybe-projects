@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@600&display=swap') ;
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 35vh;
+  justify-content: center;
+}
+
+.header h1 {
+  color: white;
+  font-family: Epilogue , sans-serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center;
+  width: 100%;
+}

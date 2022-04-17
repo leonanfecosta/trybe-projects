@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&display=swap') ;
+
+.planet-card {
+  gap: 20px;
+}
+
+.planet-name {
+  color: white;
+  font-family: Epilogue , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+}

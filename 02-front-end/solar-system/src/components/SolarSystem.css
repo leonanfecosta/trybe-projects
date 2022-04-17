@@ -1,0 +1,7 @@
+.system-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 100px 50px;
+}
