@@ -1,7 +1,5 @@
 # Habilidades
 
-Neste projeto, verificamos se voce é capaz de:
-
 * Utilizar corretamente o método `render()` para renderizar seus componentes
 
 * Utilizar `import` para trazer componentes em diferentes arquivos
