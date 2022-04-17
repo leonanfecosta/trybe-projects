@@ -9,7 +9,7 @@ There are more than 1500 hours of training that covers fundamentals of web devel
 
 ## Fundamentals - Web Development :heavy_check_mark:
 
-- [x] _[Project - Lessons Learned](1-fundamentals/01-lessons-learned)_
+- [x] _[Project - Lessons Learned](01-fundamentos/lessons-learned/)_
 - [x] _[Project - Playground Functions](1-fundamentals/02-playground-functions)_
 - [x] _[Project - Meme Generator](1-fundamentals/03-meme-generator)_
 - [x] _[Project - Guess the Color](1-fundamentals/04-guess-the-color)_
