@@ -19,7 +19,7 @@ There are more than 1500 hours of training that covers fundamentals of web devel
 - [x] _[Project - Zoo functions](01-fundamentos/zoo-functions/)_
 - [x] _[Project - Shopping Cart](01-fundamentos/shopping-cart/)_
 
-## Front-end Development - React :heavy_check_mark:
+## Front-end Development - React :hourglass_flowing_sand:
 
 - [x] _[Project - Solar System](02-front-end/solar-system/)_
 - [x] _[Project - Trybe Tryunfo](02-front-end/tryunfo/)_
