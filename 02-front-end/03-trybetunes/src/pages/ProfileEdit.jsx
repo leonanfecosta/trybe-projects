@@ -2,7 +2,8 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { getUser, updateUser } from '../services/userAPI';
-import Loading from '../components/Loading';
+import styles from '../styles/ProfileEdite.module.css';
+import logo from '../assets/images/user.svg';
 
 class ProfileEdit extends React.Component {
   constructor() {
@@ -52,45 +53,63 @@ class ProfileEdit extends React.Component {
   render() {
     const { loading, name, email, description, image, update, disabled } = this.state;
     return (
-      <div data-testid="page-profile-edit">
+      <div data-testid="page-profile-edit" className={ styles.container }>
         {update && <Redirect to="/profile" />}
-        {loading ? <Loading /> : (
+        {loading ? <h1 className={ styles.loading }>Carregando...</h1> : (
           <form>
-            <input
-              type="text"
-              value={ name }
-              data-testid="edit-input-name"
-              name="name"
-              onChange={ this.handleChange }
-              placeholder="Nome"
-            />
-            <input
-              type="text"
-              value={ email }
-              data-testid="edit-input-email"
-              name="email"
-              onChange={ this.handleChange }
-              placeholder="E-mail"
-            />
-            <input
-              type="text"
-              value={ description }
-              data-testid="edit-input-description"
-              name="description"
-              onChange={ this.handleChange }
-              placeholder="Descrição"
-            />
-            <input
-              type="text"
-              value={ image }
-              data-testid="edit-input-image"
-              name="image"
-              onChange={ this.handleChange }
-              placeholder="URL da imagem"
-            />
+            <div>
+              <img src={ logo } alt={ name } data-testid="profile-image" />
+              <input
+                type="text"
+                value={ image }
+                data-testid="edit-input-image"
+                name="image"
+                onChange={ this.handleChange }
+                placeholder="URL da imagem"
+              />
+            </div>
+            <label htmlFor="name" className={ styles.label }>
+              <h1>Nome</h1>
+              <p>Fique a vontade para usar seu nome social</p>
+              <input
+                id="name"
+                type="text"
+                value={ name }
+                data-testid="edit-input-name"
+                name="name"
+                onChange={ this.handleChange }
+                placeholder="Nome"
+              />
+            </label>
+            <label htmlFor="email" className={ styles.label }>
+              <h1>E-mail</h1>
+              <p>Escolha um email que consulte diariamente</p>
+              <input
+                id="email"
+                type="text"
+                value={ email }
+                data-testid="edit-input-email"
+                name="email"
+                onChange={ this.handleChange }
+                placeholder="usuario@usuario.com"
+              />
+            </label>
+
+            <label htmlFor="description" className={ styles.label }>
+              <h1>Descrição</h1>
+              <p>Escreva um pouco sobre você</p>
+              <textarea
+                id="description"
+                value={ description }
+                data-testid="edit-input-description"
+                name="description"
+                onChange={ this.handleChange }
+                placeholder="Sobre você"
+              />
+            </label>
             <button
               type="button"
-              data-testid="edit-button-save"
+              data-testid="edit-button"
               disabled={ disabled }
               onClick={ this.handleSubmit }
             >
@@ -98,7 +117,8 @@ class ProfileEdit extends React.Component {
             </button>
           </form>
         )}
-      </div>);
+      </div>
+    );
   }
 }
 
