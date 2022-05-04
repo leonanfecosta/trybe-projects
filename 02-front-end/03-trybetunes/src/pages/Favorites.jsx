@@ -43,7 +43,8 @@ class Favorites extends React.Component {
             </div>
           ))
         )}
-      </section>);
+      </section>
+    );
   }
 }
 

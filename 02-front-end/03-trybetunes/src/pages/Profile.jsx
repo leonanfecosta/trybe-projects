@@ -52,7 +52,8 @@ class Profile extends React.Component {
             </label>
           </section>
         )}
-      </section>);
+      </section>
+    );
   }
 }
 
