@@ -1,0 +1,41 @@
+.recipesFavorites {
+  border: 1px solid #e1e5eb;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06) , 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  min-height: 150px;
+  padding: 10px;
+  width: 90%;
+}
+
+.parte1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-width: 35%;
+}
+
+.parte1 > a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.parte1 > a > img {
+  border-radius: 10px;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.parte2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 65%;
+}
+
+.parte2 > p {
+  margin-bottom: 5px;
+}

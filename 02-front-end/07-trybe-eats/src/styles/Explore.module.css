@@ -1,0 +1,42 @@
+.explore {
+  width: 100%;
+}
+
+.explore > nav {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  margin: 30px auto 0;
+  width: 80%;
+}
+
+.buttonFood {
+  background-color: #e16162;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 8px 32px;
+  width: 200px;
+}
+
+.buttonDrink {
+  background-color: #e16162;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 8px 32px;
+  width: 200px;
+}
+
+.foodPlate {
+  margin: 100px 30px 0;
+  width: 300px;
+}

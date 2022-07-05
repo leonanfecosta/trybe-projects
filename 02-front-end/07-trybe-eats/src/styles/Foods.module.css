@@ -1,0 +1,42 @@
+.foods > nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-evenly;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.foods > main {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.allButton {
+  background-color: #e16162;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  font-size: small;
+  padding: 8px 32px;
+  width: 30%;
+}
+
+.button {
+  background-color: #f9bc5f;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  font-size: small;
+  padding-block: 8px;
+  width: 30%;
+}

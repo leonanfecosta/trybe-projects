@@ -1,0 +1,102 @@
+.doneRecipes > nav {
+  align-items: center;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-inline: auto;
+  padding-block: 20px;
+  width: 80%;
+}
+
+.doneRecipes > section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.doneRecipesCards {
+  border: 1px solid #e1e5eb;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06) , 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  min-height: 200px;
+  padding: 10px;
+  width: 90%;
+}
+
+.parte1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  max-width: 45%;
+}
+
+.parte1 > a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.parte1 > a > img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.parte2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 55%;
+}
+
+.parte2 > p {
+  margin-bottom: 5px;
+}
+
+.parte1 > aside {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  width: 100%;
+}
+
+.tags {
+  background: #e06161;
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+  font-size: 10px;
+  padding: 4px 6px;
+  text-decoration: none;
+}
+
+.allButton {
+  background-color: #e16162;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  font-size: small;
+  padding: 8px 32px;
+  width: 30%;
+}
+
+.button {
+  background-color: #f9bc5f;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  font-size: small;
+  padding-block: 8px;
+  width: 30%;
+}

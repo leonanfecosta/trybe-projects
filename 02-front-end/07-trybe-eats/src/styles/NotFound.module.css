@@ -1,0 +1,13 @@
+.notFound main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.notFound main h2 {
+  margin-top: 50px;
+  text-align: center;
+  width: 80%;
+}

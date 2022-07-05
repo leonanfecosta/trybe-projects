@@ -1,0 +1,42 @@
+.favoriteRecipes > nav {
+  align-items: center;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-inline: auto;
+  padding-block: 20px;
+  width: 80%;
+}
+
+.favoriteRecipes > main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.allButton {
+  background-color: #e16162;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  font-size: small;
+  padding: 8px 32px;
+  width: 30%;
+}
+
+.button {
+  background-color: #f9bc5f;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  font-size: small;
+  padding-block: 8px;
+  width: 30%;
+}
+

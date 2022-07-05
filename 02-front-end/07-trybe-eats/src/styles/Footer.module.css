@@ -1,0 +1,16 @@
+.footer {
+  align-items: center;
+  background-color: #d0c2ba;
+  bottom: 0;
+  display: flex;
+  height: 30px;
+  justify-content: space-evenly;
+  left: 0;
+  padding-block: 20px;
+  position: fixed;
+  width: 100vw;
+}
+
+.footer > input {
+  width: 25px;
+}

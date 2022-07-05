@@ -1,0 +1,22 @@
+.searchBar {
+  margin-inline: auto;
+  width: 90%;
+}
+
+.searchBar > aside {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto 0;
+  width: 90%;
+}
+
+.buttonFilter {
+  background-color: #e16162;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  padding: 8px 32px;
+}

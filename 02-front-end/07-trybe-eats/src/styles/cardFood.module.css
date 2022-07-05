@@ -1,0 +1,29 @@
+.cardFood {
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.cardFood > img {
+  border-radius: 10px;
+  height: 150px;
+  width: 150px;
+}
+
+.cardFood p {
+
+  /* Solução para não extrapolar o card proveniente do Stack Overflow
+  https://stackoverflow.com/questions/26973570/
+  setting-a-max-character-length-in-css */
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

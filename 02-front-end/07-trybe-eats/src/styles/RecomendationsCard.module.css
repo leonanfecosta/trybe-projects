@@ -1,0 +1,16 @@
+.recomendationCard {
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.recomendationCard > img {
+  height: 150px;
+  width: 150px;
+}

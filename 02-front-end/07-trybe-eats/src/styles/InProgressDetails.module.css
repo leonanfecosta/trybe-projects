@@ -1,0 +1,70 @@
+.inProgressDetails {
+  width: 100vw;
+}
+
+.inProgressDetails > h3, .inProgressDetails > p {
+  margin: 10px auto;
+  text-align: center;
+  width: 80%;
+}
+
+.inProgressDetails > h4 {
+  margin: 20px auto 10px;
+  text-align: center;
+  width: 80%;
+}
+
+.inProgressDetails > article {
+  margin: 10px auto 80px;
+  text-align: justify;
+  width: 80%;
+}
+
+.recipeImageDiv {
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  width: 80%;
+}
+
+.recipeImageDiv > img {
+  border-radius: 10px;
+  margin: 20px auto 0;
+  width: 40%;
+}
+
+.inProgressDetails > form {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: auto;
+  width: 80%;
+}
+
+.buttonFinishRecipe {
+  background-color: #f9bc5f;
+  border: none;
+  border-radius: 2px;
+  bottom: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  left: 50%;
+  margin-top: 30px;
+  padding: 8px 32px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  width: 200px;
+}
+
+.buttonFinishRecipe:disabled {
+  background-color: hsl(36, 93%, 67%, 0.5);
+}
+
+.buttonSection {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
