@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { deleteExpense } from '../actions';
+import styles from '../styles/ExpensesTable.module.css';
 
 class ExpensesTable extends React.Component {
   render() {
@@ -14,25 +15,25 @@ class ExpensesTable extends React.Component {
       'Câmbio utilizado',
       'Valor convertido',
       'Moeda de conversão',
-      'Editar/Excluir',
+      'Excluir',
     ];
     const { expenses, dispatch } = this.props;
     return (
-      <table>
-        <thead>
+      <table className={styles.table}>
+        <thead className={styles.tableTitles}>
           <tr>
             {titles.map((title, index) => (
-              <th key={ index }>{title}</th>
+              <th key={index}>{title}</th>
             ))}
           </tr>
         </thead>
-        <tbody>
+        <tbody className={styles.tableBody}>
           {expenses.map((expense) => {
             const coin = expense.exchangeRates[expense.currency];
             const { name, ask } = coin;
             const coinName = name.split('/')[0];
             return (
-              <tr key={ expense.id }>
+              <tr key={expense.id} className={ styles.tableInfo }>
                 <td>{expense.description}</td>
                 <td>{expense.tag}</td>
                 <td>{expense.method}</td>
@@ -43,9 +44,10 @@ class ExpensesTable extends React.Component {
                 <td>Real</td>
                 <td>
                   <button
+                    className={styles.btnDelete}
                     data-testid="delete-btn"
                     type="button"
-                    onClick={ () => dispatch(deleteExpense(expense)) }
+                    onClick={() => dispatch(deleteExpense(expense))}
                   >
                     Excluir
                   </button>

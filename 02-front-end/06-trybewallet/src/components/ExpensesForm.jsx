@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchExpenses } from '../actions/index';
+import styles from '../styles/ExpensesForm.module.css'
 
 class ExpensesForm extends React.Component {
   constructor() {
@@ -44,11 +45,11 @@ class ExpensesForm extends React.Component {
     const { currencies } = this.props;
     const { value, description, currency, method, tag } = this.state;
     return (
-      <form>
+      <form className={ styles.form }>
         <label htmlFor="value">
           Valor:
           <input
-            type="text"
+            type="number"
             data-testid="value-input"
             id="value"
             name="value"

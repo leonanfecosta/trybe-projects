@@ -1,0 +1,100 @@
+/* stylelint-disable order/properties-alphabetical-order */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #01101d;
+}
+
+.leftLogin {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightLogin {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardLogin {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #014b3d;
+  border-radius: 1.8rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  padding: 30px 35px;
+}
+
+.cardLogin > h1 {
+  color: #00ff9d;
+  font-weight: 800;
+  margin: 0;
+  font-family: var(--font);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.inputContainer > input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #0dcd90;
+  color: #01101d;
+  font-size: 12pt;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  outline: none;
+  box-sizing: border-box;
+  margin: 10px 0;
+  font-family: var(--font);
+  font-weight: 500;
+}
+
+.inputContainer > input::placeholder {
+  color: #01101d;
+}
+
+.btnLogin {
+  width: 100%;
+  padding: 16px 0;
+  margin: 25px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: var(--font);
+  letter-spacing: 3px;
+  color: #01101d;
+  background-color: #0f8;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-size: 14pt;
+}
+
+.btnLogin:disabled {
+  background-color: #0f86;
+  cursor: auto;
+}
